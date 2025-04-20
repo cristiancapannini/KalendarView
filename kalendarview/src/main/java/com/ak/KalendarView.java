@@ -42,8 +42,8 @@ public class KalendarView extends LinearLayout{
     private Button addEventButton;
     private static final int MAX_CALENDAR_COLUMN = 42;
     private int month, year;
-    private SimpleDateFormat formatter = new SimpleDateFormat("MMMM yyyy", Locale.ENGLISH);
-    private Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+    private SimpleDateFormat formatter = new SimpleDateFormat("MMMM yyyy", Locale.ITALIAN);
+    private Calendar cal = Calendar.getInstance(Locale.ITALIAN);
     private Context context;
     private GridAdapter mAdapter;
     int prev=-1,pos,cr_pos=-2;
@@ -285,8 +285,8 @@ public class KalendarView extends LinearLayout{
         dayValueInCells = new ArrayList<Date>();
         String sDate1="27/02/2020";
         try {
-            Date date1=new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH).parse(sDate1);
-            Date date2=new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH).parse("08/09/2023");
+            Date date1=new SimpleDateFormat("dd/MM/yyyy",Locale.ITALIAN).parse(sDate1);
+            Date date2=new SimpleDateFormat("dd/MM/yyyy",Locale.ITALIAN).parse("08/09/2023");
 
         EventObjects evd=new EventObjects(10,"hello",date1);
         EventObjects evde=new EventObjects(11,"hi",date2);
